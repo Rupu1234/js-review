@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+  
+</body>
+<script>
+
+// remove special charaters
+//  let value = prompt("")
+//  let string=value.replace(/[^a-zA-Z 0-9]/g, "   ")
+//  console.log(string);
+
+//    const a = prompt("enter a sentence")
+//    const b = prompt("enter a string");
+//    const c =(a.replace( b, " "));
+// 	 document.write(c);
+
+
+ // let value1=prompt("Enter a Word");
+ // let value2=prompt("Enter Remove Word");
+ // let result=value1.replace(value2,"")
+ // console.log(result);
+
+
+
+
+    //  let value = [12,10,-15,-11,14,13,16];
+    //   let sort;
+    //   for (i = 0; i < value.length; i++) {
+    //     for (j = i; j < value.length; j++) {
+    //       if (value[i] > value[j]) {
+    //         sort = value[i];
+    //         value[i] = value[j];
+    //         value[j] = sort;
+    //       }
+    //     }
+    //     console.log(value[i]);
+    //   }
+
+
+       
+        // let a =[0,1,2,3,10,20,30];
+        // a.sort();
+        // console.log(a);
+    
+
+        // let a=[2,3,4,5,6,7,10,12];
+        // let b=[];
+
+        // for (i=0; i<a.length; i++){
+        //     if(a[i]%2==0){
+        //         b=a[i];
+        //         console.log(b);
+        //     }
+        // }
+        
+        //  let a =["gopi",1,20,"pravin",50,"vel"]
+        //     b=[];
+        //     for(i=0; i<a.length; i++){
+        //        if(typeof a[i] == typeof ""){
+        //             b.push(a[i])
+        //        }
+        //     }
+        //     console.log(b);
+
+
+        var num = window.prompt();
+          var str = num.toString();
+          var result = [str[0]];
+
+          for (var x = 1; x < str.length; x++) {
+            if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+              result.push('-', str[x]);
+            } else {
+              result.push(str[x]);
+            }
+          }
+          console.log(result.join('-'));
+
+</script>
+</html>
